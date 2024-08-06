@@ -25,29 +25,65 @@ main {
   .form-section {
     flex-grow: 0.3; 
     padding: 0 35px;
+
+    img {
+      margin-bottom: 30px;
+    }
     
     h2 {
       font-size: 20px;
       font-weight: bold;
+      margin-bottom: 45px;
     }
 
-    button {
+    .btn-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      border: none;
-      background: transparent;
+      gap: 30px;
 
-      &.btn-primary {
-        background: $primary-color;
-        color: white;
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 12px;
+        color: $bg-gray;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 100%;
+
+        div {
+          flex-grow: 1;
+          height: 2px;
+          background: $bg-gray;
+        }
       }
 
-      &.btn-secondary {
-        border: 1px solid $secondary-color;
-        color: $primary-color;
+      button {
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        background: transparent;
+        padding: 12px 24px;
+        cursor: pointer;
+  
+        &.btn-primary {
+          background: $primary-color;
+          color: white;
+          box-shadow: 0px 8px 12px rgba(148.23, 64.33, 255, 0.20);
+        }
+  
+        &.btn-secondary {
+          border: 1px solid $secondary-color;
+          color: $primary-color;
+        }
       }
     }
+
   }
 }

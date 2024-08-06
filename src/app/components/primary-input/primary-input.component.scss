@@ -1,0 +1,15 @@
+@import "../../../styles/variables.scss";
+
+.input-wrapper {
+  color: $text-color;
+  font-size: 16px;
+  text-align: start;
+
+  input {
+    border: none;
+    border-radius: 8px;
+    background-color: $gray-secondary-bg;
+    padding: 12px 0 12px 20px;
+    width: 100%;
+  }
+}
